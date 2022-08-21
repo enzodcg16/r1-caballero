@@ -2,7 +2,7 @@ package com.example.LC.models;
 import javax.persistence.*;
 
 
-
+//clase que controlara nuestros datos de entra y salida (puente)
 
 
 @Entity
