@@ -36,5 +36,9 @@ public class UserService {
         }
 
     }
-  
+    public UserModel modificarPorId(UserModel usuario,long id){
+        UserModel u = new UserModel();
+        u.setID(id);
+        return userReposiroty.save(usuario);
+    }
 }

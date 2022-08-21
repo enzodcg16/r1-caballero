@@ -1,14 +1,15 @@
 package com.example.LC.models;
 import javax.persistence.*;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+
 
 @Entity
 @Table(name = "usuarios")
 public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonProperty("id")
     @Column(unique = true, nullable = false)
     private long ID;
 

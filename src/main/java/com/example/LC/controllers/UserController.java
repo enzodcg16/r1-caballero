@@ -49,5 +49,12 @@ public class UserController {
         return this.userService.guardarUsuario(usuarios);
 
     }
-   
+    @PutMapping(path="/{id}")
+    public UserModel modificarUsuario( @RequestBody UserModel usuario,@PathVariable("id")Long id){
+        
+        
+     return userService.modificarPorId(usuario,id);
+
+
+    }
 }
